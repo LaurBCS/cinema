@@ -97,23 +97,23 @@ nav ul li a span.highlight{
 	margin: 0 auto;
 }
 
-.top-movies div span{
+.top-movies span{
 	font-size: 1.5em;
 	color: #E50BE3;
 	text-transform: uppercase;
 }
 
-.top-movies div h1{
+.top-movies h1{
 	font-size: 4.5em;
 	margin: 10px 0;
 }
 
-.top-movies div p{
+.top-movies p{
 	font-size: 2em;
 	margin-bottom: 15px;
 }
 
-.top-movies div a{
+.top-movies a{
 	font-size: 1.5em;
 	color: #fff;
 	text-decoration:none;
@@ -125,9 +125,57 @@ nav ul li a span.highlight{
 	display: inline-block;
 }
 
-.top-movies div a i{
+.top-movies a .fa-play{
 	margin-right: 10px;
 }
+
+section .navigation {
+	list-style-type: none;
+	position: absolute;
+	bottom: 10vh;
+	left: 20%;
+	z-index: 2;
+}
+
+section .navigation li {
+	display: inline-block;
+	background-color: white;
+	border-radius: 50%;
+	padding: 6px;
+	margin-right: 4px;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+section .navigation li.special {
+	border: 2px solid white;
+	background-color: transparent;
+}
+
+section .left-arrow {
+	position:absolute;
+	top: 50vh;
+	left: 4%;
+	z-index: 2;
+}
+
+section .fa-angle-left {
+	color: white;
+	font-size: 3em;
+}
+
+section .right-arrow {
+	position:absolute;
+	top: 50vh;
+	right: 4%;
+	z-index: 2;
+}
+
+section .fa-angle-right {
+	color: white;
+	font-size: 3em;
+}
+
 
 /* Section New in */
 
@@ -567,6 +615,10 @@ div.hero h1{
 	width: 80%;
   }
   
+  section .navigation {
+	  left: 10%;
+  }
+  
   .new-movies{
 	width: 80%;
   }
@@ -668,6 +720,10 @@ div.hero h1{
 	display: none;
   }
   
+  section .navigation {
+	  bottom: 5vh;
+  }
+  
   footer{
 	flex-flow: column;
 	height: 45vh;
@@ -675,7 +731,7 @@ div.hero h1{
   }
    
   footer label{
-	display:block;
+	display: block;
   }
   
    /* Index */
