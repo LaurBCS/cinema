@@ -97,23 +97,23 @@ nav ul li a span.highlight{
 	margin: 0 auto;
 }
 
-.top-movies div span{
+.top-movies span{
 	font-size: 1.5em;
 	color: #E50BE3;
 	text-transform: uppercase;
 }
 
-.top-movies div h1{
+.top-movies h1{
 	font-size: 4.5em;
 	margin: 10px 0;
 }
 
-.top-movies div p{
+.top-movies p{
 	font-size: 2em;
 	margin-bottom: 15px;
 }
 
-.top-movies div a{
+.top-movies a{
 	font-size: 1.5em;
 	color: #fff;
 	text-decoration:none;
@@ -125,9 +125,57 @@ nav ul li a span.highlight{
 	display: inline-block;
 }
 
-.top-movies div a i{
+.top-movies a .fa-play{
 	margin-right: 10px;
 }
+
+section .navigation {
+	list-style-type: none;
+	position: absolute;
+	bottom: 10vh;
+	left: 20%;
+	z-index: 2;
+}
+
+section .navigation li {
+	display: inline-block;
+	background-color: white;
+	border-radius: 50%;
+	padding: 6px;
+	margin-right: 4px;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+section .navigation li.special {
+	border: 2px solid white;
+	background-color: transparent;
+}
+
+section .left-arrow {
+	position:absolute;
+	top: 50vh;
+	left: 4%;
+	z-index: 2;
+}
+
+section .fa-angle-left {
+	color: white;
+	font-size: 3em;
+}
+
+section .right-arrow {
+	position:absolute;
+	top: 50vh;
+	right: 4%;
+	z-index: 2;
+}
+
+section .fa-angle-right {
+	color: white;
+	font-size: 3em;
+}
+
 
 /* Section New in */
 
@@ -269,6 +317,47 @@ nav ul li a span.highlight{
 	color: #000;
 	margin-left: 200px;
 }
+
+/* Most Viewed-movies */
+
+.most-viewed-movies {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.most-viewed-movies h2 {
+	font-size: 2.5em;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	color: #E50BE3;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.most-viewed-movies h2::before{
+	content: '';
+	width: 16%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 2px solid #E50BE3;
+}
+
+.most-viewed-movies div {
+    margin-bottom: 50px;
+	align-items: center;
+}
+
+.most-viewed-movies img {
+	border-radius: 18px;
+}
+
+.most-viewed-movies p {
+	margin-bottom: 40px;
+}
+
 
 /* Footer */
 
@@ -567,11 +656,19 @@ div.hero h1{
 	width: 80%;
   }
   
+  section .navigation {
+	  left: 10%;
+  }
+  
   .new-movies{
 	width: 80%;
   }
   
   .movies{
+	width: 80%;
+  }
+  
+  .most-viewed-movies{
 	width: 80%;
   }
   
@@ -668,14 +765,23 @@ div.hero h1{
 	display: none;
   }
   
+  section .navigation {
+	  bottom: 5vh;
+  }
+  
+  .most-viewed-movies img {
+	width: 300px;
+	height: 150px;
+  }
+  
   footer{
 	flex-flow: column;
-	height: 45vh;
+	height: 55vh;
 	align-items: flex-start;
   }
    
   footer label{
-	display:block;
+	display: block;
   }
   
    /* Index */
