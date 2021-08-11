@@ -318,6 +318,47 @@ section .fa-angle-right {
 	margin-left: 200px;
 }
 
+/* Most Viewed-movies */
+
+.most-viewed-movies {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.most-viewed-movies h2 {
+	font-size: 2.5em;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	color: #E50BE3;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.most-viewed-movies h2::before{
+	content: '';
+	width: 16%;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 2px solid #E50BE3;
+}
+
+.most-viewed-movies div {
+    margin-bottom: 50px;
+	align-items: center;
+}
+
+.most-viewed-movies img {
+	border-radius: 18px;
+}
+
+.most-viewed-movies p {
+	margin-bottom: 40px;
+}
+
+
 /* Footer */
 
 footer{
@@ -627,6 +668,10 @@ div.hero h1{
 	width: 80%;
   }
   
+  .most-viewed-movies{
+	width: 80%;
+  }
+  
   footer{
 	padding: 0 10%;
   }
@@ -724,9 +769,14 @@ div.hero h1{
 	  bottom: 5vh;
   }
   
+  .most-viewed-movies img {
+	width: 300px;
+	height: 150px;
+  }
+  
   footer{
 	flex-flow: column;
-	height: 45vh;
+	height: 55vh;
 	align-items: flex-start;
   }
    
