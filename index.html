@@ -13,173 +13,174 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="https://kit.fontawesome.com/845b90585a.js" crossorigin="anonymous"></script>
 		<script src="index.js" defer></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 	</head>
-	<body>
-		<header>
+	<body class="lh-sm font-Roboto">
+		<header class="d-flex justify-content-between align-items-center bg-black opacity-90% position-fixed w-100">
 			<a href="index.html" title="Cinema"><img src="images/logo.png" alt="A video tape with the company name"></a>	
-			<nav>
+			<nav class="d-flex justify-content-around align-items-center">
 				<ul>
 					<li>
-						<a href="index.html" title="Home"><span class="highlight">Home</span></a>
+						<a href="index.html" title="Home" class="fs-6 fw-light text-white text-uppercase text-decoration-none me-2 d-none d-md-block"><span class="highlight">Home</span></a>
 					</li>
 				</ul>
 				<ul>
 					<li>
-						<a href="about.html" title="About us">About us</a>
+						<a href="about.html" title="About us" class="fs-6 fw-light text-white text-uppercase text-decoration-none me-2 d-none d-md-block">About us</a>
 					</li>
 				</ul>
 				<ul>
 					<li>
-						<a href="contact.html" title="Contact us">Contact us</a>
+						<a href="contact.html" title="Contact us" class="fs-6 fw-light text-white text-uppercase text-decoration-none d-none d-md-block">Contact us</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		
 		<main>
-			<section id="top-movies" >
-				<ol class="navigation">
-					<li class="first special"></li>
-					<li class="second"></li>
-					<li class="third"></li>
+			<section id="top-movies">
+				<ol class="navigation position-absolute">
+					<li class="first special d-inline-block"></li>
+					<li class="second d-inline-block"></li>
+					<li class="third d-inline-block"></li>
 				</ol>
-				<span class="left-arrow"><i class="fas fa-angle-left"></i></span>
-				<span class="right-arrow"><i class="fas fa-angle-right"></i></span>
-			    <div class="top-movies slide1">
-					<div>
-						<span>Action, Adventure, Fantasy</span>
-						<h1>The Green Knight</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
-						<a href="https://www.youtube.com/"><i class="fas fa-play"></i>Play Trailer</a>
+				<span class="left-arrow"><i class="fas fa-angle-left fs-3 text-white"></i></span>
+				<span class="right-arrow"><i class="fas fa-angle-right fs-3 text-white"></i></span>
+			    <div class="top-movies slide1 justify-content-center align-items-center text-white position-relative w-100 vh-100">
+					<div class="my-0 mx-auto">
+						<span class="fs-6 fw-light text-uppercase">Action, Adventure, Fantasy</span>
+						<h1 class="fs-1 my-2">The Green Knight</h1>
+						<p class="fs-5 fw-light mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
+						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
 					</div>
 				</div>
 				
-				<div class="top-movies slide2">
-					<div>
-						<span>Thriller, Horror</span>
-						<h1>Black Widow</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt fringilla vehicula. Proin tincidunt tristique iaculis. Nullam vitae leo massa. Aliquam non lacus sapien. Duis elementum vulputate massa vel tristique.</p>
-						<a href="https://www.youtube.com/"><i class="fas fa-play"></i>Play Trailer</a>
+				<div class="top-movies slide2 justify-content-center align-items-center text-white position-relative w-100 vh-100">
+					<div class="my-0 mx-auto">
+						<span class="fs-6 fw-light text-uppercase">Thriller, Horror</span>
+						<h1 class="fs-1 my-2">Black Widow</h1>
+						<p class="fs-5 fw-light mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt fringilla vehicula. Proin tincidunt tristique iaculis. Nullam vitae leo massa. Aliquam non lacus sapien. Duis elementum vulputate massa vel tristique.</p>
+						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
 					</div>
 				</div>
 				
-				<div class="top-movies slide3">
-				    <div>
-						<span>Action, Adventure, Romance</span>
-						<h1>F9: The Fast Saga</h1>
-						<p>Cras lacinia gravida eros eget feugiat. Suspendisse et urna nec mi fringilla sollicitudin quis nec justo. Nullam elementum sem et dapibus aliquet. Proin quis vulputate erat. Proin eget lectus erat.</p>
-						<a href="https://www.youtube.com/"><i class="fas fa-play"></i>Play Trailer</a>
+				<div class="top-movies slide3 justify-content-center align-items-center text-white position-relative w-100 vh-100">
+				    <div class="my-0 mx-auto">
+						<span class="fs-6 fw-light text-uppercase">Action, Adventure, Romance</span>
+						<h1 class="fs-1 my-2">F9: The Fast Saga</h1>
+						<p class="fs-5 fw-light mb-3">Cras lacinia gravida eros eget feugiat. Suspendisse et urna nec mi fringilla sollicitudin quis nec justo. Nullam elementum sem et dapibus aliquet. Proin quis vulputate erat. Proin eget lectus erat.</p>
+						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
 					</div>
 				</div>
 			</section>
 		
-			<section id="new-movies" class="new-movies">
-				<h2>New in</h2>
-				<div class="container">
+			<section id="new-movies" class="new-movies mx-auto my-0">
+				<h2 class="fs-4 fw-light position-relative text-uppercase">New in</h2>
+				<div class="wrapper d-xl-flex justify-content-between">
 					<div>
 						<img src="images/airsoft.jpg" alt="A soldier with a gun in his hand">
-						<h4>Lorem ipsum dolor.</h4>
+						<h4 class="fs-6 fw-light mt-1 mb-3 text-xl-center">Lorem ipsum dolor.</h4>
 					</div>
 				
 					<div>
 						<img src="images/woman.jpg" alt="A woman sitting on a rock outside in the evening">
-						<h4>Lorem ipsum dolor.</h4>
+						<h4 class="fs-6 fw-light mt-1 mb-3 text-xl-center">Lorem ipsum dolor.</h4>
 					</div>
 				
 					<div>
 						<img src="images/witchs-house.jpg" alt="A witch flies on a broom at night">
-						<h4>Lorem ipsum dolor.</h4>
+						<h4 class="fs-6 fw-light mt-1 mb-3 text-xl-center">Lorem ipsum dolor.</h4>
 					</div>
 				</div>
 			</section>
 			
-			<section id="movies" class="movies">
-				<ul>
-					<li>Mon</li>
-					<li>Tue</li>
-					<li>Wed</li>
-					<li><span>Thu</span></li>
-					<li>Fri</li>
-					<li>Sat</li>
-					<li>Sun</li>
+			<section id="movies" class="movies mx-auto my-0">
+				<ul class="ps-0">
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Mon</li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Tue</li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Wed</li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3"><span>Thu</span></li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Fri</li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Sat</li>
+					<li class="fs-5 fw-light d-inline-block pe-3 mb-3">Sun</li>
 				</ul>
-				<div class="container">	
-					<div class="special card">
-						<img src="images/woman.jpg" alt="A woman sitting on a rock outside in the evening">
-						<span class="type">Thriller, Horror</span>
-						<h3>Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
-						<div class="container-time">
-							<span class="view"><i class="far fa-clock"></i>Viewing times</span>
-							<span class="time">11:00 am</span>
-							<span class="time">1:30 pm</span>
-							<span class="time">5:15 pm</span>
-							<span class="time">10:00 pm</span>
-							<span class="duration"> 130 Mins</span>
+				<div class="wrapper d-flex flex-column">	
+					<div class="special card d-lg-block border-0 border-bottom">
+						<img src="images/woman.jpg" alt="A woman sitting on a rock outside in the evening" class="float-start">
+						<span class="type fs-6 fw-light text-uppercase mt-3">Thriller, Horror</span>
+						<h3 class="fs-5">Lorem ipsum dolor</h3>
+						<p class="fs-6 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
+						<div class="wrapper-time d-flex flex-wrap align-items-center justify-content-start">
+							<span class="view fs-6 text-uppercase me-3"><i class="far fa-clock"></i>Viewing times</span>
+							<span class="time fs-6 me-3">11:00 am</span>
+							<span class="time fs-6 me-3">1:30 pm</span>
+							<span class="time fs-6 me-3">5:15 pm</span>
+							<span class="time fs-6">10:00 pm</span>
+							<span class="duration fs-6"> 130 Mins</span>
 						</div>
 					</div>
 				
-					<div class="special card">
-						<img src="images/witchs-house.jpg" alt="A witch flies on a broom at night">
-						<span class="type">Thriller, Horror</span>
-						<h3>Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
-						<div class="container-time">
-							<span class="view"><i class="far fa-clock"></i>Viewing times</span>
-							<span class="time">11:00 am</span>
-							<span class="time">2:00 pm</span>
-							<span class="time">5:15 pm</span>
-							<span class="time">10:30 pm</span>
-							<span class="duration"> 105 Mins</span>
+					<div class="special card d-lg-block border-0 border-bottom">
+						<img src="images/witchs-house.jpg" alt="A witch flies on a broom at night" class="float-start">
+						<span class="type fs-6 fw-light text-uppercase mt-3">Thriller, Horror</span>
+						<h3 class="fs-5">Lorem ipsum dolor</h3>
+						<p class="fs-6 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
+						<div class="wrapper-time d-flex flex-wrap align-items-center justify-content-start">
+							<span class="view fs-6 text-uppercase me-3"><i class="far fa-clock"></i>Viewing times</span>
+							<span class="time fs-6 me-3">11:00 am</span>
+							<span class="time fs-6 me-3">2:00 pm</span>
+							<span class="time fs-6 me-3">5:15 pm</span>
+							<span class="time fs-6">10:30 pm</span>
+							<span class="duration fs-6"> 105 Mins</span>
 						</div>
 					</div>
 				
-					<div class="card">
-						<img src="images/airsoft.jpg" alt="A soldier with a gun in his hand">
-						<span class="type">Thriller, Horror</span>
-						<h3>Lorem ipsum dolor</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
-						<div class="container-time">
-							<span class="view"><i class="far fa-clock"></i>Viewing times</span>
-							<span class="time">11:00 am</span>
-							<span class="time">2:00 pm</span>
-							<span class="time">5:15 pm</span>
-							<span class="time">10:30 pm</span>
-							<span class="duration"> 110 Mins</span>
+					<div class="card d-lg-block border-0">
+						<img src="images/airsoft.jpg" alt="A soldier with a gun in his hand" class="float-start">
+						<span class="type fs-6 fw-light text-uppercase mt-3">Thriller, Horror</span>
+						<h3 class="fs-5">Lorem ipsum dolor</h3>
+						<p class="fs-6 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
+						<div class="wrapper-time d-flex flex-wrap align-items-center justify-content-start">
+							<span class="view fs-6 text-uppercase me-3"><i class="far fa-clock"></i>Viewing times</span>
+							<span class="time fs-6 me-3">11:00 am</span>
+							<span class="time fs-6 me-3">2:00 pm</span>
+							<span class="time fs-6 me-3">5:15 pm</span>
+							<span class="time fs-6">10:30 pm</span>
+							<span class="duration fs-6"> 110 Mins</span>
 						</div>
 					</div>
 				</div>
 			</section>
 			
-			<section class="most-viewed-movies" id="most-viewed">
-				<h2>Most Viewed</h2>
+			<section class="most-viewed-movies mx-auto my-0" id="most-viewed">
+				<h2 class="fs-4 fw-light text-uppercase position-relative">Most Viewed</h2>
 				<div class="most-viewed">
 				</div>
 			</section>
 		</main>
 		
-		<footer>
-		    <div>
-				<h4>Section</h4>
-				<a href="#top-movies" title="Top Movies">Top Movies</a>
-				<a href="#new-movies" title="New Movies">New Movies</a>
-				<a href="#movies" title="Movies">Movies</a>
-				<a href="#most-viewed" title="Movies">Most Viewed Movies</a>
+		<footer class="d-flex align-items-start justify-content-between bg-black">
+		    <div class="d-flex flex-column justify-content-center h-100">
+				<h4 class="fs-6 fw-light text-uppercase">Section</h4>
+				<a href="#top-movies" title="Top Movies" class="fs-6 fw-light text-white text-decoration-none">Top Movies</a>
+				<a href="#new-movies" title="New Movies" class="fs-6 fw-light text-white text-decoration-none">New Movies</a>
+				<a href="#movies" title="Movies" class="fs-6 fw-light text-white text-decoration-none">Movies</a>
+				<a href="#most-viewed" title="Movies" class="fs-6 fw-light text-white text-decoration-none">Most Viewed</a>
 			</div>
 			
-			<div>
-				<h4>Social Links</h4>
-				<a href="#" title="Facebook"><i class="fab fa-facebook-f footer"></i>Facebook</a>
-				<a href="#" title="Instagram"><i class="fab fa-instagram footer"></i>Instagram</a>
-				<a href="#" title="Twitter"><i class="fab fa-twitter footer"></i>Twitter</a>
+			<div class="d-flex flex-column justify-content-center h-100">
+				<h4 class="fs-6 fw-light text-uppercase">Social Links</h4>
+				<a href="#" title="Facebook" class="fs-6 fw-light text-white text-decoration-none"><i class="fab fa-facebook-f footer"></i>Facebook</a>
+				<a href="#" title="Instagram" class="fs-6 fw-light text-white text-decoration-none"><i class="fab fa-instagram footer"></i>Instagram</a>
+				<a href="#" title="Twitter" class="fs-6 fw-light text-white text-decoration-none"><i class="fab fa-twitter footer"></i>Twitter</a>
 			</div>
 			
-			<div>
-				<h4>Newsletter</h4>
+			<div class="d-flex flex-column justify-content-center h-100">
+				<h4 class="fs-6 fw-light text-uppercase">Newsletter</h4>
 				<form>
-					<label for="email">E-mail</label>
-					<input type="text" id="email" name="email">
-					<input type="submit" value="Subscribe">
+					<label for="email" class="fs-6 fw-light text-white">E-mail</label>
+					<input type="text" id="email" name="email" class="fs-6 fw-light">
+					<input type="submit" value="Subscribe" class="fs-6 fw-light d-block">
 				</form>
 			</div>
 		</footer>

@@ -10,49 +10,23 @@ html{
 }
 
 body {
-  font-size: 10px;
-  line-height: 1.6;
   letter-spacing: 1px;
   word-spacing: 1px;
-  font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
 header{
-	position: fixed;
-	width: 100%;
 	height: 10%;
 	padding: 0 20%;
-	display : flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: black;
-	opacity: 0.9;
 	z-index: 2;
 }
 
-header nav{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
 header img {
-	margin: auto;
 	height: 70px;
 }
 
 nav ul li{
 	list-style-type: none;
-}
-
-nav ul li a{
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 1.6em;
-	color: #fff;
-	font-weight: 500;
-	margin-right: 40px;
 }
 
 nav ul li a span.highlight{
@@ -62,14 +36,12 @@ nav ul li a span.highlight{
 /* Section top-movies */
 
 .top-movies{
-	position: relative;
 	background-image: url('images/castle.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 100%;
-	height: 100vh;
 	z-index: 1;
+	display: flex;
 }
 
 .top-movies::before{
@@ -84,61 +56,29 @@ nav ul li a span.highlight{
 	z-index: -1;
 }
 
-.top-movies {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-}
-
 .top-movies div{
 	width: 60%;
-	margin: 0 auto;
 }
 
 .top-movies span{
-	font-size: 1.5em;
 	color: #E50BE3;
-	text-transform: uppercase;
-}
-
-.top-movies h1{
-	font-size: 4.5em;
-	margin: 10px 0;
-}
-
-.top-movies p{
-	font-size: 2em;
-	margin-bottom: 15px;
 }
 
 .top-movies a{
-	font-size: 1.5em;
-	color: #fff;
-	text-decoration:none;
-	text-transform: uppercase;
 	background: rgb(245,23,243);
 	background: linear-gradient(90deg, rgba(245,23,243,1) 0%, rgba(229,11,227,1) 35%, rgba(190,6,188,1) 100%); 
 	padding: 10px 40px;
 	border-radius: 18px;
-	display: inline-block;
-}
-
-.top-movies a .fa-play{
-	margin-right: 10px;
 }
 
 section .navigation {
 	list-style-type: none;
-	position: absolute;
 	bottom: 10vh;
 	left: 20%;
 	z-index: 2;
 }
 
 section .navigation li {
-	display: inline-block;
 	background-color: white;
 	border-radius: 50%;
 	padding: 6px;
@@ -155,25 +95,15 @@ section .navigation li.special {
 section .left-arrow {
 	position:absolute;
 	top: 50vh;
-	left: 4%;
+	left: 2%;
 	z-index: 2;
-}
-
-section .fa-angle-left {
-	color: white;
-	font-size: 3em;
 }
 
 section .right-arrow {
 	position:absolute;
 	top: 50vh;
-	right: 4%;
+	right: 2%;
 	z-index: 2;
-}
-
-section .fa-angle-right {
-	color: white;
-	font-size: 3em;
 }
 
 
@@ -181,18 +111,13 @@ section .fa-angle-right {
 
 .new-movies{
 	width: 60%;
-	margin: 0 auto;
 }
 
 .new-movies h2{
-	font-size: 2.5em;
-	font-weight: 500;
-	text-transform: uppercase;
 	padding-bottom: 10px;
 	color: #E50BE3;
 	border-bottom: 1px solid lightgray;
 	margin: 50px 0;
-	position: relative;
 }
 
 .new-movies h2::before{
@@ -204,30 +129,16 @@ section .fa-angle-right {
 	border-bottom: 2px solid #E50BE3;
 }
 
-.new-movies div.container{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.new-movies div.container div img{
+.new-movies div.wrapper div img{
 	border-radius: 15px;
 	width: 300px;
 	height: 350px;
-}
-
-.new-movies div.container div h4{
-	font-size: 1.6em;
-	font-weight: 500;
-	text-align: center;
-	margin-top: 5px;
 }
 
 /* Movies */
 
 .movies{
 	width: 60%;
-	margin: 0 auto;
 }
 
 .movies ul{
@@ -236,104 +147,59 @@ section .fa-angle-right {
 	margin-bottom: 40px;
 }
 
-.movies ul li{
-	display: inline-block;
-	font-size: 1.7em;
-	padding-right: 50px;
-	padding-bottom: 10px;
-}
-
 .movies ul li span{
 	color: #E50BE3;
 }
 
-.movies div.container{
-	display: flex;
-	flex-flow: column;
+.movies div.wrapper div{
+    padding-bottom: 30px;
+	margin-bottom: 30px;
 }
 
-.movies div.container div{
-    padding-bottom: 40px;
-	margin-bottom: 40px;
-}
-
-.movies div.container div.special{
+.movies div.wrapper div.special{
 	border-bottom: 1px solid lightgray;
 }
 
-.movies div.container div img{
+.movies div.wrapper div img{
 	width: 200px; 
 	height: 250px;
-	float: left;
 	margin-right: 20px;
 	border-radius: 18px;
 }
 
-.movies div.container div span.type{
-	font-size: 1.3em;
-	text-transform: uppercase;
+.movies div.wrapper div span.type{
 	color: #E50BE3;	
 }
 
-.movies div.container div h3{
-	font-size: 2em;
-	font-weight: 500;
+.movies div.wrapper div h3{
 	margin-bottom: 10px;
 }
 
-.movies div.container div p{
-	font-size: 1.5em;
-}
-
-.movies div.container div.card {
-	position: relative;
-}
-
-.movies div.container div.container-time {
-	position: absolute;
-	bottom: 0;
-	left: 220px;
-}
-
-.movies div.container div.container-time span.view {
-	font-size: 1.3em;
-	text-transform: uppercase;
-}
-
-.movies div.container div.container-time span.view i{
+.movies div.wrapper div.wrapper-time span.view i{
 	margin-right: 5px;
 }
 
-.movies div.container div.container-time span.time {
-	font-size: 1.3em;
+.movies div.wrapper div.wrapper-time span.time {
 	background-color : lightgray;
 	border-radius: 18px;
 	padding: 10px 15px;
-	color: #000;
 }
 
-.movies div.container div.container-time span.duration {
-	font-size: 1.3em;
-	color: #000;
-	margin-left: 200px;
+.movies div.wrapper div.wrapper-time span.duration {
+	margin-left: 80px;
 }
 
 /* Most Viewed-movies */
 
 .most-viewed-movies {
 	width: 60%;
-	margin: 0 auto;
 }
 
 .most-viewed-movies h2 {
-	font-size: 2.5em;
-	font-weight: 500;
-	text-transform: uppercase;
 	padding-bottom: 10px;
 	color: #E50BE3;
 	border-bottom: 1px solid lightgray;
 	margin-bottom: 50px;
-	position: relative;
 }
 
 .most-viewed-movies h2::before{
@@ -347,7 +213,6 @@ section .fa-angle-right {
 
 .most-viewed-movies div {
     margin-bottom: 50px;
-	align-items: center;
 }
 
 .most-viewed-movies img {
@@ -362,34 +227,17 @@ section .fa-angle-right {
 /* Footer */
 
 footer{
-	background-color: #000;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	height: 25vh;
 	padding: 0 20%;
 }
 
-footer div{
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	height: 100%;
-}
-
 footer div h4{
-	font-size: 1.6em;
-	text-transform: uppercase;
 	color: #E50BE3;
 	letter-spacing: 2px;
 	margin-bottom: 8px;
-	font-weight: 500;
 }
 
 footer div a {
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.2em;
 	transition: color 0.3s ease-in-out;
 }
 
@@ -403,17 +251,12 @@ footer div a i {
 	color: gray;
 }
 
-footer div label {
-	font-size: 1.2em;
-	color: #fff;
-}
-
 footer div input[type=text]{
 	outline: none;
 	padding: 4px 10px;
 	border-radius: 5px;
 	border: 1px solid #fff;
-	width: 200px;
+	width: 150px;
 }
 
 footer div input[type=text]:focus {
@@ -421,8 +264,6 @@ footer div input[type=text]:focus {
 }
 
 footer div input[type=submit] {
-	display: block;
-	font-size: 1.2em;
 	cursor: pointer;
 	color: #E50BE3;
 	border-color: #E50BE3;
@@ -443,17 +284,12 @@ footer div input[type=submit]:hover{
 /* Contact */
 
 div.hero {
-	position: relative;
 	background-image: url('images/america.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	width: 100%;
 	height: 50vh;
 	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 div.hero::before{
@@ -468,24 +304,12 @@ div.hero::before{
 	z-index: -1;
 }
 
-div.hero h1{
-	font-size: 4em;
-	text-transform: uppercase;
-	font-weight: 500;
-	color: #fff;
-}
-
 .contact {
 	width: 60%;
-	margin: 0 auto;
 }
 
 .contact h2{
-	position: relative;
-	font-size: 2em;
-	text-transform: uppercase;
 	color: #E50BE3;
-	font-weight: 500;
 	border-bottom: 1px solid lightgray;
 	padding-bottom: 10px;
 	margin: 40px 0;
@@ -500,27 +324,16 @@ div.hero h1{
 	border-bottom: 2px solid #E50BE3;
 }
 
-.contact div.container{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+.contact div.wrapper{
 	margin-bottom: 80px;
 } 
 
-.contact div.container form {
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
-}
-
-.contact div.container form label {
-	font-size: 1.3em;
-	text-transform: uppercase;
+.contact div.wrapper form label {
 	margin-bottom: 3px;
 	margin-top: 20px;
 }
 
-.contact div.container form input {
+.contact div.wrapper form input {
 	outline: none;
 	padding: 8px;
 	width: 600px;
@@ -528,12 +341,12 @@ div.hero h1{
 	transition: border 0.5s ease-in-out;
 }
 
-.contact div.container form input:focus {
+.contact div.wrapper form input:focus {
 	border: 1px solid #E50BE3;
 	transition: border 0.5s ease-in-out;
 }
 
-.contact div.container form textarea{
+.contact div.wrapper form textarea{
 	outline: none;
 	height: 200px;
 	padding: 8px;
@@ -541,14 +354,13 @@ div.hero h1{
 	transition: border 0.5s ease-in-out;
 }
 
-.contact div.container form textarea:focus{
+.contact div.wrapper form textarea:focus{
 	border: 1px solid #E50BE3;
 	transition: border 0.5s ease-in-out;
 }
 
-.contact div.container form input.button {
+.contact div.wrapper form input.button {
 	width: 150px;
-	text-transform: uppercase;
 	border-radius: 18px;
 	color: #E50BE3;
 	border: 1px solid #E50BE3;
@@ -558,40 +370,25 @@ div.hero h1{
 	transition: background 0.5s ease-in-out;
 }
 
-.contact div.container form input.button:hover{
+.contact div.wrapper form input.button:hover{
 	background-color: #E50BE3;
 	color: #fff;
 	transition: background 0.5s ease-in-out;
 }
 
-.contact div.container address i {
+.contact div.wrapper address i {
 	border: 1px solid gray;
 	border-radius: 50%;
 	padding: 25px;
-	font-size: 3em;
 	color: #E50BE3;
 	margin-bottom: 5px;
 }
 
-.contact div.container address h3{
-	font-size: 1.4em;
-	font-weight: 500;
-}
-
-.contact div.container address p{
-	font-size: 1.2em;
+.contact div.wrapper address p{
 	margin-bottom: 20px;
 }
 
-.address div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-}
-
 .address iframe{
-	display: block;
 	width: 60%;
 	height: 450px;
 	border-radius: 20px;
@@ -603,18 +400,13 @@ div.hero h1{
 
 .about{
 	width: 60%;
-	margin: 0 auto;
 }
 
 .about h2{
-	font-size: 2.5em;
 	color: #E50BE3;
-	text-transform: uppercase;
-	font-weight: 500;
 	margin-top: 40px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid lightgray;
-	position: relative;
 }
 
 .about h2::before{
@@ -627,9 +419,6 @@ div.hero h1{
 }
 
 .about div{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	margin-bottom: 80px;
 }
 
@@ -638,11 +427,9 @@ div.hero h1{
 }
 
 .about p {
-	font-size: 1.5em;
 	width: 70vh;
 	margin-top: 40px;
 }
-
 
 
 /* Media screen 1650px */
@@ -694,42 +481,11 @@ div.hero h1{
 }
 
 
-
 /* Media screen 1250px */
 
 @media screen and (max-width: 1250px) {
 	
-   /* Index */
-   
-  .new-movies div.container div img{
-	width: 25vw;
-  }
-   
-  .movies div.container div.container-time{
-	position: static;
-  }
-  
-  .movies div.container div.container-time span.view{
-	display: block;
-	margin-top: 10px;
-  }
-  
-  .movies div.container div.container-time span.time{
-	display: inline-block;
-	margin-top: 5px;
-	padding: 5px 10px;
-  }
-  
-  .movies div.container div.container-time span.duration{
-	display: block;
-	margin: 0;
-  }
   /* About */
-   
-  .about div{
-	flex-flow: column;
-	align-items: flex-start;
-  }
   
   .about div p{
 	width: 100%;
@@ -742,27 +498,17 @@ div.hero h1{
   
   /* Contact */
   
-  .contact div.container{
-	flex-flow: column;
-	align-items: flex-start;
-  }
-  
-  .contact div.container form{
+  .contact div.wrapper form{
 	margin-bottom: 50px;
   }
-  
-  .contact div.container form input{
-	width: 80vw;
-  }
 }
-
 
 
 /* Media screen 700px */
 
 @media screen and (max-width: 700px) {
-  header nav{
-	display: none;
+  header{
+	  height: 10vh;
   }
   
   section .navigation {
@@ -777,29 +523,12 @@ div.hero h1{
   footer{
 	flex-flow: column;
 	height: 55vh;
-	align-items: flex-start;
-  }
-   
-  footer label{
-	display: block;
   }
   
-   /* Index */
-  
-  .new-movies div.container{
-	flex-flow: column;
-	align-items: flex-start;
+   /* Index */ 
+   .contact div.wrapper form input{
+	width: 70vw;
   }
-  
-  .new-movies div.container div img{
-	width: 50vw;
-	margin-top: 50px;
-  }
-  
-  .movies div.container div.card img{
-	width: 100%;
-	margin-bottom: 20px;
-  } 
 }
 
 
