@@ -138,6 +138,8 @@ function populateSection(obj) {
 	img.src = "https://picsum.photos/id/235/400/200";
 	div.appendChild(img);
 	div.appendChild(paragraph);
+	paragraph.classList.add('fs-6');
+	paragraph.classList.add('fw-light');
 	paragraph.style.fontSize = "1.8em";
   }
 }
