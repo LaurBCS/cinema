@@ -14,6 +14,8 @@
 		<script src="https://kit.fontawesome.com/845b90585a.js" crossorigin="anonymous"></script>
 		<script src="index.js" defer></script>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 	<body class="lh-sm font-Roboto">
 		<header class="d-flex justify-content-between align-items-center bg-black opacity-90% position-fixed w-100">
@@ -39,38 +41,8 @@
 		
 		<main>
 			<section id="top-movies">
-				<ol class="navigation position-absolute">
-					<li class="first special d-inline-block"></li>
-					<li class="second d-inline-block"></li>
-					<li class="third d-inline-block"></li>
-				</ol>
-				<span class="left-arrow"><i class="fas fa-angle-left fs-3 text-white"></i></span>
-				<span class="right-arrow"><i class="fas fa-angle-right fs-3 text-white"></i></span>
-			    <div class="top-movies slide1 justify-content-center align-items-center text-white position-relative w-100 vh-100">
-					<div class="my-0 mx-auto">
-						<span class="fs-6 fw-light text-uppercase">Action, Adventure, Fantasy</span>
-						<h1 class="fs-1 my-2">The Green Knight</h1>
-						<p class="fs-5 fw-light mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque non nisi porttitor pharetra. In turpis nibh, laoreet id consequat ac, ornare in tortor. Pellentesque eget arcu ut sapien pretium.</p>
-						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
-					</div>
-				</div>
-				
-				<div class="top-movies slide2 justify-content-center align-items-center text-white position-relative w-100 vh-100">
-					<div class="my-0 mx-auto">
-						<span class="fs-6 fw-light text-uppercase">Thriller, Horror</span>
-						<h1 class="fs-1 my-2">Black Widow</h1>
-						<p class="fs-5 fw-light mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt fringilla vehicula. Proin tincidunt tristique iaculis. Nullam vitae leo massa. Aliquam non lacus sapien. Duis elementum vulputate massa vel tristique.</p>
-						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
-					</div>
-				</div>
-				
-				<div class="top-movies slide3 justify-content-center align-items-center text-white position-relative w-100 vh-100">
-				    <div class="my-0 mx-auto">
-						<span class="fs-6 fw-light text-uppercase">Action, Adventure, Romance</span>
-						<h1 class="fs-1 my-2">F9: The Fast Saga</h1>
-						<p class="fs-5 fw-light mb-3">Cras lacinia gravida eros eget feugiat. Suspendisse et urna nec mi fringilla sollicitudin quis nec justo. Nullam elementum sem et dapibus aliquet. Proin quis vulputate erat. Proin eget lectus erat.</p>
-						<a href="https://www.youtube.com/" class="fs-6 text-white text-uppercase text-decoration-none d-inline-block"><i class="fas fa-play me-2"></i>Play Trailer</a>
-					</div>
+				<div id="slide">
+					<slide-show></slide-show>
 				</div>
 			</section>
 		
@@ -154,7 +126,8 @@
 			
 			<section class="most-viewed-movies mx-auto my-0" id="most-viewed">
 				<h2 class="fs-4 fw-light text-uppercase position-relative">Most Viewed</h2>
-				<div class="most-viewed">
+				<div id="api" class="most-viewed">
+					<vue-api></vue-api>
 				</div>
 			</section>
 		</main>
