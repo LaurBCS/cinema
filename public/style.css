@@ -29,8 +29,13 @@ nav ul li{
 	list-style-type: none;
 }
 
-nav ul li a span.highlight{
-	color: #E50BE3;
+nav ul li .login {
+	border-radius: 18px;
+	border: 1px solid #E50BE3;
+}
+
+nav ul li .register {
+	margin-left: 40px;
 }
 
 /* Section top-movies */
@@ -431,6 +436,44 @@ div.hero::before{
 	margin-top: 40px;
 }
 
+/* Register */
+
+form div label{
+	font-weight: 300;
+}
+
+form div input {
+	outline: none;
+	padding: 8px;
+	width: 400px;
+	border: 1px solid gray;
+}
+
+form div button {
+	width: 120px;
+	border-radius: 18px;
+	color: #E50BE3;
+	border: 1px solid #E50BE3;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background 0.5s ease-in-out;
+}
+
+form button.login {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+form div button:hover{
+	background-color: #E50BE3;
+	color: #fff;
+	transition: background 0.5s ease-in-out;
+}
+
+p.error {
+	color: red;
+	font-size: 12px;
+}
 
 /* Media screen 1650px */
 
@@ -525,8 +568,11 @@ div.hero::before{
 	height: 55vh;
   }
   
-   /* Index */ 
    .contact div.wrapper form input{
+	width: 70vw;
+  }
+
+   form div input{
 	width: 70vw;
   }
 }
