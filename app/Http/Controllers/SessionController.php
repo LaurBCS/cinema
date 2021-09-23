@@ -22,7 +22,7 @@ class SessionController extends Controller
 
         if (Auth::attempt($attributes))
         {
-            return redirect('/');
+            return redirect('/movies');
         }
 
         throw ValidationException::withMessages([

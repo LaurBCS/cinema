@@ -3,9 +3,11 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MovieController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +33,9 @@ Route::get('login', [SessionController::class, 'create'])->middleware('guest');
 Route::post('login', [SessionController::class, 'store'])->middleware('guest');
 
 Route::post('logout', [SessionController::class, 'logout'])->middleware('auth');
+
+
+Route::resource('movies', MovieController::class)->middleware('auth');
 
 
 
